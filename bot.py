@@ -7,7 +7,7 @@ bot = telebot.TeleBot(token)
 def start(message):
     bot.reply_to(message, "Hi, I am penis.")
 
-@bot.message_handler(commands=['ban'])
+@bot.message_handler(commands=['ban_mruser'])
 def ban_user(message):
     if message.reply_to_message: #проверка на то, что эта команда была вызвана в ответ на сообщение 
         chat_id = message.chat.id # сохранение id чата
